@@ -24,9 +24,11 @@ export const en: Translation = {
   about: {
     title: 'About me',
     paragraph1:
-      "I'm passionate about technology and constantly looking to evolve. I'm currently a Software Developer at Hortti, working on modern web platforms with React, TypeScript, NestJS and PostgreSQL.",
+      'My journey in tech started in IT infrastructure — support, networking and environment setup — and evolved into software development. Along the way I built responsive websites and interfaces optimized for every device, always focused on delivering real value: faster, more accessible and more enjoyable products.',
     paragraph2:
-      'My goal is to contribute to the advancement of technology by solving problems and building innovative solutions. Determined to grow professionally, I am always open to challenges and learning opportunities.',
+      "Today I'm a Software Developer at Hortti, the digital infrastructure for Brazil's food supply centers (Ceasas): a platform that connects every Ceasa in the country in a single place, digitizing the fresh-produce trade and bringing growers, merchants and buyers closer together. There I build features end to end with React, TypeScript, NestJS and PostgreSQL — from database modeling to the UI — applying unit testing and architecture best practices to a product that moves the country's food supply.",
+    paragraph3:
+      'My goal is to keep growing by solving real problems. Determined to evolve professionally, I am always open to challenges, good conversations and learning opportunities.',
     factRole: 'Full Stack Developer',
     factDegree: 'Software Engineering (ongoing)',
   },

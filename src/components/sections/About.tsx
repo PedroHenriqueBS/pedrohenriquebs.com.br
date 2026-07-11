@@ -13,6 +13,7 @@ export function About() {
         <div data-reveal className="flex flex-col gap-4.5 text-[16.5px] leading-[1.75] text-muted">
           <p>{t.about.paragraph1}</p>
           <p>{t.about.paragraph2}</p>
+          <p>{t.about.paragraph3}</p>
         </div>
         <div data-reveal>
           <TerminalWindow title="pedro.config.ts">

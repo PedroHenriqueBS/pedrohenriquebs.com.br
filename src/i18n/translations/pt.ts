@@ -22,9 +22,11 @@ export const pt = {
   about: {
     title: 'Sobre mim',
     paragraph1:
-      'Sou apaixonado por tecnologia e estou constantemente buscando evoluir. Atualmente sou Desenvolvedor de Software na Hortti, onde trabalho com plataformas web modernas usando React, TypeScript, NestJS e PostgreSQL.',
+      'Minha trajetória em tecnologia começou na infraestrutura de TI — suporte, redes e configuração de ambientes — e evoluiu para o desenvolvimento de software. Nesse caminho, construí websites responsivos e interfaces otimizadas para diferentes dispositivos, sempre com foco em entregar valor real: produtos mais rápidos, acessíveis e agradáveis de usar.',
     paragraph2:
-      'Meu objetivo é contribuir para o avanço da tecnologia, resolvendo problemas e desenvolvendo soluções inovadoras. Determinado a crescer profissionalmente, estou sempre aberto a desafios e oportunidades de aprendizado.',
+      'Hoje sou Desenvolvedor de Software na Hortti, a infraestrutura digital das Ceasas: uma plataforma que conecta todas as centrais de abastecimento do Brasil em um só lugar, digitalizando o comércio de hortifrúti e aproximando produtores, comerciantes e compradores. Lá desenvolvo funcionalidades de ponta a ponta com React, TypeScript, NestJS e PostgreSQL — da modelagem do banco à interface — aplicando testes de unidade e boas práticas de arquitetura em um produto que movimenta o abastecimento alimentar do país.',
+    paragraph3:
+      'Meu objetivo é seguir crescendo resolvendo problemas de verdade. Determinado a evoluir profissionalmente, estou sempre aberto a desafios, boas conversas e oportunidades de aprendizado.',
     factRole: 'Full Stack Developer',
     factDegree: 'Eng. de Software (cursando)',
   },

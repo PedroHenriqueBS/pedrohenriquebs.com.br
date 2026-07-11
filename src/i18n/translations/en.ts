@@ -93,7 +93,11 @@ export const en: Translation = {
     kicker: "what's next?",
     title: "Let's talk!",
     description:
-      "I'm always open to new opportunities, projects and good conversations about tech. Reach out!",
+      "I'm always open to new opportunities, projects and good conversations about tech. The fastest way to reach me is WhatsApp — say hi!",
+    whatsappCta: 'Message me on WhatsApp',
+    whatsappHint: 'the message comes ready — just hit send :)',
+    whatsappMessage:
+      "Hi, Pedro! I came across your portfolio and really liked your work. I'd love to know more — can we talk?",
   },
   footer: 'built from scratch with lots of coffee',
 }

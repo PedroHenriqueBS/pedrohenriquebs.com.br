@@ -91,7 +91,11 @@ export const pt = {
     kicker: 'e agora?',
     title: 'Vamos conversar!',
     description:
-      'Estou sempre aberto a novas oportunidades, projetos e boas conversas sobre tecnologia. Me chama!',
+      'Estou sempre aberto a novas oportunidades, projetos e boas conversas sobre tecnologia. O jeito mais rápido de me encontrar é no WhatsApp — me chama!',
+    whatsappCta: 'Chamar no WhatsApp',
+    whatsappHint: 'a mensagem já vai pronta — é só apertar enviar :)',
+    whatsappMessage:
+      'Olá, Pedro! Vi seu portfólio e gostei muito do seu trabalho. Queria saber mais — vamos conversar?',
   },
   footer: 'construído do zero com muito café',
 }

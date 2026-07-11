@@ -1,13 +1,16 @@
 import { useLanguage } from '../../i18n'
 import { profile } from '../../data/profile'
+import { WhatsAppIcon } from '../ui/icons'
 
 export function Contact() {
   const { t } = useLanguage()
 
+  const whatsappUrl = `${profile.links.whatsapp}?text=${encodeURIComponent(t.contact.whatsappMessage)}`
+
   const socials = [
     { label: 'LinkedIn', href: profile.links.linkedin },
     { label: 'GitHub', href: profile.links.github },
-    { label: 'WhatsApp', href: profile.links.whatsapp },
+    { label: 'Email', href: `mailto:${profile.email}` },
   ]
 
   return (
@@ -21,17 +24,23 @@ export function Contact() {
           {t.contact.description}
         </p>
         <a
-          href={`mailto:${profile.email}`}
-          className="inline-block max-w-full rounded-lg bg-accent px-6 py-3.5 text-sm font-semibold break-all text-bg shadow-[0_0_28px_--alpha(var(--color-accent)/28%)] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_0_44px_--alpha(var(--color-accent)/50%)] sm:px-8.5 sm:text-base"
+          href={whatsappUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex max-w-full items-center gap-3 rounded-lg bg-accent px-6 py-3.5 text-sm font-semibold text-bg shadow-[0_0_28px_--alpha(var(--color-accent)/28%)] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_0_44px_--alpha(var(--color-accent)/50%)] sm:px-8.5 sm:text-base"
         >
-          {profile.email}
+          <WhatsAppIcon size={20} />
+          {t.contact.whatsappCta}
         </a>
+        <p className="mx-auto mt-4 max-w-[440px] font-mono text-[12.5px] text-faint">
+          {t.contact.whatsappHint}
+        </p>
         <div className="mt-8.5 flex flex-wrap justify-center gap-4.5 font-mono text-[13.5px]">
           {socials.map((social) => (
             <a
               key={social.label}
               href={social.href}
-              target="_blank"
+              target={social.href.startsWith('mailto:') ? undefined : '_blank'}
               rel="noopener noreferrer"
               className="rounded-lg border border-accent/20 px-4.5 py-2.5 text-muted transition-colors hover:border-accent hover:text-accent"
             >

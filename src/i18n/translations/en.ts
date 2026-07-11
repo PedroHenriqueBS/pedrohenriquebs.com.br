@@ -38,7 +38,7 @@ export const en: Translation = {
   projects: {
     title: 'Featured projects',
     subtitle: 'A selection of personal projects — click to see the code on GitHub.',
-    imagePlaceholder: '[ project screenshot ]',
+    screenshotAlt: (name: string) => `Screenshot of the ${name} project`,
     viewAll: (count: number) => `See all ${count} repositories`,
   },
   experience: {

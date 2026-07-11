@@ -27,10 +27,13 @@ export function Projects() {
             data-reveal
             className="block overflow-hidden rounded-2xl border border-accent/15 bg-surface text-ink transition-all duration-300 hover:-translate-y-[5px] hover:border-accent/50 hover:shadow-[0_16px_44px_rgba(0,0,0,0.5)]"
           >
-            <div className="relative flex h-[150px] items-center justify-center border-b border-accent/10 [background:repeating-linear-gradient(-45deg,#0d130d_0px,#0d130d_14px,#0f160f_14px,#0f160f_28px)]">
-              <span className="rounded-md border border-dashed border-accent/30 px-3.5 py-1.5 font-mono text-xs text-faint">
-                {t.projects.imagePlaceholder}
-              </span>
+            <div className="relative aspect-video overflow-hidden border-b border-accent/10">
+              <img
+                src={project.screenshot}
+                alt={t.projects.screenshotAlt(project.name)}
+                loading="lazy"
+                className="h-full w-full object-cover object-top"
+              />
               <span className="absolute top-3.5 right-3.5 rounded-[5px] border border-accent/25 bg-bg/80 px-2 py-1 font-mono text-[11px] text-accent">
                 {project.language}
               </span>

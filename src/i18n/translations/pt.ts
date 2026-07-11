@@ -36,7 +36,7 @@ export const pt = {
   projects: {
     title: 'Projetos em destaque',
     subtitle: 'Uma seleção de projetos pessoais — clique para ver o código no GitHub.',
-    imagePlaceholder: '[ screenshot do projeto ]',
+    screenshotAlt: (name: string) => `Screenshot do projeto ${name}`,
     viewAll: (count: number) => `Ver todos os ${count} repositórios`,
   },
   experience: {
